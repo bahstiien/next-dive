@@ -11,7 +11,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
 import FormHelperText from "@mui/material/FormHelperText";
 
-const contact = () => {
+const Contact = () => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,7 +54,6 @@ const contact = () => {
       >
         <div className="m-2 flex flex-col w-2/5">
           <FormControl className="m-4">
-            {" "}
             <InputLabel htmlFor="my-input">Email :</InputLabel>
             <Input
               id="my-input"
@@ -106,4 +105,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

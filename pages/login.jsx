@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import LoginComponent from "../components/LoginComponent";
+import Connect from "../components/Connect";
 
 const login = () => {
   return (
     <div>
       <Layout>
-        <LoginComponent />
+        <Connect />
       </Layout>
     </div>
   );

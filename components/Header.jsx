@@ -1,8 +1,21 @@
+import { useDispatch } from "react-redux";
 import Link from "next/link";
 import Head from "next/head";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const Header = (props) => {
+  const dispatch = useDispatch();
+  const toggleSignIn = () => {
+    dispatch({
+      type: "TOGGLEIN",
+    });
+  };
+
+  const toggleSignUp = () => {
+    dispatch({
+      type: "TOGGLEUP",
+    });
+  };
   return (
     <div className="font-inter  text-gray-600  p-10 ">
       <Head>
@@ -25,12 +38,10 @@ const Header = (props) => {
               <Link href="/contact"> Contact </Link>
             </li>
           </ul>
-
-          <button> Connexion </button>
-          <button>Inscription</button>
         </nav>
         <div className="flex-end ml-24">
-          <AccountCircleIcon fontSize="large" />
+          <button onClick={toggleSignIn}>Connexion</button>
+          <button onClick={toggleSignUp}>Inscription</button>
         </div>
       </div>
     </div>

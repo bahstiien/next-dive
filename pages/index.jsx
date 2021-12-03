@@ -2,6 +2,7 @@ import Image from "next/image";
 import HomeDisplay from "../components/HomeDisplay";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
+import Connect from "../components/connect";
 
 export default function Home() {
   return (
