@@ -6,9 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Diver from "../public/images/Diver.jpeg";
-import Booking from "../public/images/booking.jpg";
-import cardBank from "../public/images/cardBank.jpeg";
+import SpaceX from "../public/images/spaceX.jpg";
 
 export default function ActionAreaCard() {
   return (
@@ -16,7 +14,7 @@ export default function ActionAreaCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia>
-            <Image src={Booking} alt="My desk" width="350" height="300" />
+            <Image src={SpaceX} alt="My desk" width="350" height="300" />
           </CardMedia>
           <CardContent>
             <Typography
@@ -42,7 +40,7 @@ export default function ActionAreaCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia>
-            <Image src={cardBank} alt="My desk" width="350" height="300" />
+            <Image src={SpaceX} alt="My desk" width="350" height="300" />
           </CardMedia>
           <CardContent>
             <Typography
@@ -68,7 +66,7 @@ export default function ActionAreaCard() {
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia>
-            <Image src={Diver} alt="My desk" width="350" height="300" />
+            <Image src={SpaceX} alt="My desk" width="350" height="300" />
           </CardMedia>
           <CardContent>
             <Typography

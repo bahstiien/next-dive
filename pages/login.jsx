@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import LoginComponent from "../components/LoginComponent";
+import SignIn from "../components/SignIn";
 
 const login = () => {
   return (
     <div>
       <Layout>
-        <LoginComponent />
+        <SignIn />
       </Layout>
     </div>
   );
