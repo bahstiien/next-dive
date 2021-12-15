@@ -6,10 +6,21 @@ import Link from "next/link";
 const HomeDisplay = () => {
   return (
     <div>
+      <div className="homeHeader mb-36">
+        <h1 className="mt-14 homeh1 text-lg font-round mb-10">Scub'App</h1>
+        <p className="homeP font-round text-gray-300 p-10">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum
+          quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero
+          nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur
+          ab.
+        </p>
+
+        <button className="HomeBtn">Découvrir Scubapp</button>
+      </div>
       <Card />
-      <Link href="/registration">
+      <Link>
         <div>
-          <CTAbtn />{" "}
+          <CTAbtn classname="mb-4" />{" "}
         </div>
       </Link>
     </div>

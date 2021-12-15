@@ -7,14 +7,17 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import SpaceX from "../public/images/spaceX.jpg";
+import Diver from "../public/images/diver.jpg";
+import Booking from "../public/images/booking.jpg";
+import Discover from "../public/images/discover.jpg";
 
 export default function ActionAreaCard() {
   return (
     <div className="flex flex-col justify-around mx-28 mb-24 sm:flex-row">
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345 }} className="shadow-2xl rounded-3xl">
         <CardActionArea>
           <CardMedia>
-            <Image src={SpaceX} alt="My desk" width="350" height="300" />
+            <Image src={Diver} alt="My desk" width="350" height="300" />
           </CardMedia>
           <CardContent>
             <Typography
@@ -37,10 +40,10 @@ export default function ActionAreaCard() {
         </CardActionArea>
       </Card>
 
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345 }} className="shadow-2xl rounded-3xl">
         <CardActionArea>
           <CardMedia>
-            <Image src={SpaceX} alt="My desk" width="350" height="300" />
+            <Image src={Booking} alt="My desk" width="350" height="300" />
           </CardMedia>
           <CardContent>
             <Typography
@@ -63,10 +66,10 @@ export default function ActionAreaCard() {
         </CardActionArea>
       </Card>
 
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345 }} className="shadow-2xl rounded-3xl">
         <CardActionArea>
           <CardMedia>
-            <Image src={SpaceX} alt="My desk" width="350" height="300" />
+            <Image src={Discover} alt="My desk" width="350" height="300" />
           </CardMedia>
           <CardContent>
             <Typography
