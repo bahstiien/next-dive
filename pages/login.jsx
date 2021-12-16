@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Connect from "../components/Connect";
+import SignIn from "../components/SignIn";
 
 const login = () => {
   return (
     <div>
       <Layout>
-        <Connect />
+        <SignIn />
       </Layout>
     </div>
   );
