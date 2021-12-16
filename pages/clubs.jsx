@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import dynamic from "next/dynamic";
 const Map = dynamic(() => import("../components/Map"), {
   ssr: false,
@@ -31,8 +31,7 @@ const maps = () => {
   ];
   return (
     <div>
-      <Layout>
-        <h1 className="m-10 text-3xl">Nos clubs partenaires</h1>
+      <Layout name="Les clubs partenaires">
         <div className="flex justify-center mb-10">
           <Map
             h={"80vh"}

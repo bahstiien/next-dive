@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 
 import React from "react";
 
@@ -7,7 +7,7 @@ const mentions = () => {
     <div>
       <Layout>
         <h1> Mentions légales</h1>
-        <p className="font-inter m-24">
+        <p className="font-inter m-14">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
           urna sem. Proin volutpat blandit elementum. Praesent vel magna

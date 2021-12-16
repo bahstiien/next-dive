@@ -1,12 +1,12 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import SignUpComponents from "../components/SignUpComponents";
 
 const SignUp = () => {
   return (
     <Layout>
-      <SignUpComponents />
-i    </Layout>
+      <SignUpComponents />i{" "}
+    </Layout>
   );
 };
 

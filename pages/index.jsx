@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HomeDisplay from "../components/HomeDisplay";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import Price from "../components/Price";
 import styles from "../styles/Home.module.css";
 import CookieConsent from "react-cookie-consent";
@@ -9,7 +9,7 @@ import StayConnect from "../components/StayConnect";
 export default function Home() {
   return (
     <div>
-      <Layout name="Home">
+      <Layout>
         <CookieConsent
           location="bottom"
           buttonText="Sure man!!"

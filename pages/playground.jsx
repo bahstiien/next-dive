@@ -1,10 +1,14 @@
 import React from "react";
+import Layout from "../components/Layout/Layout";
+
 import { Divide as Hamburger } from "hamburger-react";
 
 const playground = () => {
   return (
     <div>
-      <Hamburger size={48} />
+      <Layout>
+        <Hamburger size={48} />
+      </Layout>
     </div>
   );
 };

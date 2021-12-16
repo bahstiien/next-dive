@@ -1,15 +1,12 @@
 import "tailwindcss/tailwind.css";
-import styles from "../styles/globals.css";
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import modalsReducer from "../Reducers/modalsReducer";
+import "../styles/globals.css";
+import { SessionProvider } from "next-auth/react";
 
-const store = createStore(modalsReducer);
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, session }) {
   return (
-    <Provider store={store}>
+    <SessionProvider session={session}>
       <Component {...pageProps} />
-    </Provider>
+    </SessionProvider>
   );
 }
 

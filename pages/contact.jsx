@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import Footer from "../components/Footer";
 import styles from "../styles/contact.module.css";
 
@@ -46,7 +46,6 @@ const Contact = () => {
   }
   return (
     <Layout name="Contact">
-      <h1 className="title text-2xl text-center ">Contact</h1>
       <form
         className="p-4 m-2 flex justify-center flex-col"
         ref={form}

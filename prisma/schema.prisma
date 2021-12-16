@@ -12,14 +12,16 @@ datasource db {
 }
 
 model user {
-  user_id        Int      @id @default(autoincrement())
-  email          String
+  user_id        Int    @id @default(autoincrement())
+  email          String @unique
   hashedPassword String
-  firstname      String
-  lastname       String
-  birthday       DateTime
-  certif_id      Int
-  level_id       Int
+  role           String @default("diver")
+
+  //   firstname      String
+  //   lastname       String
+  birthday DateTime?
+  //   certif_id      Int
+  //   level_id       Int
 }
 
 model certification {
