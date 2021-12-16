@@ -24,7 +24,7 @@ export default NextAuth({
   ],
   callbacks: {
     async session({ session, user, token }) {
-      console.log("in session", { session, user, token });
+      //    console.log("in session", { session, user, token });
 
       if (token) {
         session.user.role = token.role;
@@ -38,7 +38,7 @@ export default NextAuth({
         token.role = user.role;
       }
 
-      console.log("in jwt", { token, user, account, profile, isNewUser });
+      // console.log("in jwt", { token, user, account, profile, isNewUser });
 
       return token;
     },

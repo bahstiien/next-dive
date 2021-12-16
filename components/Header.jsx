@@ -6,6 +6,7 @@ import scubaLogo from "../public/images/scubaLogo.png";
 import Link from "next/link";
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
+import DarkMode from "./Layout/DarkMode";
 
 const user = {
   name: "Tom Cook",
@@ -55,6 +56,7 @@ export default function Example(props) {
                     <h2 className="text-md pl-4 italic font-round text-blue-400">
                       <Link href="/">ScubApp</Link>
                     </h2>
+                    <DarkMode />
                   </div>
                 </div>
                 {status === "unauthenticated" && (

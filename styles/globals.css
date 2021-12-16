@@ -3,6 +3,43 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary-accent: #2614c7;
+  --color-primary: #000;
+  --color-button: #3d486c;
+  --color-paragraph: #797979;
+  --color-button-text: rgb(255, 255, 255);
+  --color-background: #fff;
+  --color-anchor: #000aff;
+}
+
+[data-theme="dark"] {
+  --color-primary-accent: #00ff4c;
+  --color-primary: #fff;
+  --color-button: #00ff4c;
+  --color-paragraph: #8a8a8a;
+  --color-button-text: rgb(0, 0, 0);
+  --color-background: #22212b;
+  --color-anchor: #00ff4c;
+}
+/* :root {
+  --color-primary-accent: ##04bbff;
+  --color-primary: ##0594d0;
+  --color-button: #0594d0;
+  --color-paragraph: #051c24;
+  --color-button-text: #003c57;
+  --color-background: #f7fafc;
+}
+
+[data-theme="dark"] {
+  --color-primary-accent: #004e98;
+  --color-primary: #82cfd8;
+  --color-button: #007fa9;
+  --color-paragraph: #ceddde;
+  --color-button-text: #9cd2d5;
+  --color-background: #00334a;
+} */
+
 * {
   padding: 0;
   margin: 0;
@@ -58,11 +95,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #f7fafc;
+  background-color: var(--color-background);
 }
 
 a {
-  color: inherit;
+  color: var(--color-paragraph);
   text-decoration: none;
 }
 
@@ -271,4 +308,9 @@ h1 {
 
 .btnSubmit:active {
   box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #48bb78;
 }

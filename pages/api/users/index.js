@@ -4,7 +4,7 @@ import base from "../../../middleware/commons";
 
 async function handler(req, res) {
   const validationError = validateUser(req.body);
-  console.log(validationError);
+  // console.log(validationError);
   if (validationError) return res.status(422).send(validationError);
   if (await emailAlreadyExists(req.body.email))
     return res.status(409).send("This email already exists");
