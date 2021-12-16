@@ -3,9 +3,6 @@ import styles from "../styles/Map.module.css";
 import { MapContainer, TileLayer } from "react-leaflet";
 
 function Map() {
-  const myFunction = () => {
-    alert("holla");
-  };
   //Markers est un tableau de marker, voir le fichier data_example.txt pour voir le modèle de données
   return (
     <div className="flex mx-10">

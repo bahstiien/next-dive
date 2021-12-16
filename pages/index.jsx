@@ -23,9 +23,9 @@ export default function Home() {
             This bit of text is smaller :O
           </span>
         </CookieConsent>
-        {/* <HomeDisplay />
+        <HomeDisplay />
         <StayConnect />
-        <Price /> */}
+        <Price />
       </Layout>
     </div>
   );
