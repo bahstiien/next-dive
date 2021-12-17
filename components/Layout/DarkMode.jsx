@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FormGroup, FormControlLabel, Switch } from "@mui/material";
 
 const DarkMode = () => {
   const [darkTheme, setDarkTheme] = useState(undefined);
@@ -29,11 +30,18 @@ const DarkMode = () => {
     setDarkTheme(initialColorValue === "dark");
   }, []);
   return (
-    <div>
-      <label className="switch">
-        <input type="checkbox" checked={darkTheme} onChange={handleToggle} />
-        <span className="slider"></span>
-      </label>
+    <div className="flex justify-center text-center">
+      <FormGroup>
+        <p className="mr-5 text-2xl -mt-4">🌙</p>
+        <FormControlLabel
+          control={<Switch defaultChecked />}
+          label=""
+          labelPlacement="end"
+          color="primary"
+          checked={darkTheme}
+          onChange={handleToggle}
+        />
+      </FormGroup>
     </div>
   );
 };
