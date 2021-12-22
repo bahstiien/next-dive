@@ -107,7 +107,14 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  color: var(--color-primary);
+  font-family: "Comfortaa", cursive;
+}
+
 h1 {
+  color: var(--color-primary);
+
   font-family: "Comfortaa", cursive;
   text-align: center;
   text-transform: uppercase;

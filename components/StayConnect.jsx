@@ -1,4 +1,5 @@
 import React from "react";
+import CTAbtn from "../components/CTAbtn";
 
 const StayConnect = () => {
   return (
@@ -16,11 +17,8 @@ const StayConnect = () => {
           </p>
         </div>
         <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
-          <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-            <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-400 focus:outline-none focus:bg-blue-300 transition duration-150 ease-in-out">
-              Notify me
-            </button>
-          </div>
+          <CTAbtn title="Suivez nos actualités" />
+
           <p className="mt-3 text-sm leading-5 text-indigo-200">
             We care about the protection of your data. Your data is safe and
             never used for commercial purposes.

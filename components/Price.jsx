@@ -1,8 +1,9 @@
 import React from "react";
+import CTAbtn from "../components/CTAbtn";
 
 const Price = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center  mt-20">
       <div className="rounded-lg shadow-lg overflow-hidden mb-4 w-1/5 mt-10">
         <div className="px-6 py-8 bg-white dark:bg-gray-800 sm:p-10 sm:pb-6">
           <div className="flex justify-center">
@@ -83,14 +84,7 @@ const Price = () => {
               </p>
             </li>
           </ul>
-          <div className="mt-6 rounded-md shadow">
-            <a
-              href="#"
-              className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-            >
-              Start team plan
-            </a>
-          </div>
+          <CTAbtn title="Créer votre compte" />
         </div>
       </div>
     </div>
