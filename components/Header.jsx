@@ -7,6 +7,8 @@ import Link from "next/link";
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
 import DarkMode from "./Layout/DarkMode";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 
 const user = {
   name: "Tom Cook",
@@ -59,12 +61,19 @@ export default function Example(props) {
                     <DarkMode />
                   </div>
                 </div>
-                {status === "unauthenticated" && (
-                  <button onClick={() => signIn()}>Connexion</button>
-                )}
-                {status === "authenticated" && (
-                  <button onClick={() => signOut()}>Déconnexion</button>
-                )}
+                <div className="mt-4">
+                  {status === "unauthenticated" && (
+                    <div onClick={() => signIn()}>
+                      {" "}
+                      <PermContactCalendarIcon />
+                    </div>
+                  )}
+                  {status === "authenticated" && (
+                    <div onClick={() => signOut()}>
+                      <ExitToAppIcon />
+                    </div>
+                  )}
+                </div>
                 <nav
                   className="hidden lg:py-2 lg:flex lg:space-x-8 font-round"
                   aria-label="Global"
