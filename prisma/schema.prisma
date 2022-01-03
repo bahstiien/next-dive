@@ -24,6 +24,18 @@ model user {
   //   level_id       Int
 }
 
+model diveSession {
+  id                    Int       @id @default(autoincrement())
+  date                  DateTime?
+  boat                  String?
+  spot                  String?
+  placesOnBoat          Int       @default(10)
+  meetingSpot           String    @default("Club de plongée des Albatros")
+  miniLevel             String    @default("all")
+  price                 Int       @default(45)
+  additionalInformation String?   @db.LongText
+}
+
 model certification {
   certif_id   Int    @id @default(autoincrement())
   name        String

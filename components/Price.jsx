@@ -4,7 +4,7 @@ import CTAbtn from "../components/CTAbtn";
 const Price = () => {
   return (
     <div className="flex justify-center  mt-20">
-      <div className="rounded-lg shadow-lg overflow-hidden mb-4 w-1/5 mt-10">
+      <div className="rounded-lg shadow-lg overflow-hidden mb-4 w-4/5 mt-10">
         <div className="px-6 py-8 bg-white dark:bg-gray-800 sm:p-10 sm:pb-6">
           <div className="flex justify-center">
             <span className="inline-flex px-4 py-1 dark:text-white rounded-full text-sm leading-5 font-semibold tracking-wide uppercase">

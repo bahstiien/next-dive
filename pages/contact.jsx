@@ -10,6 +10,7 @@ import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
 import FormHelperText from "@mui/material/FormHelperText";
+import CTAbtn from "../components/CTAbtn";
 
 const Contact = () => {
   const form = useRef();
@@ -47,7 +48,7 @@ const Contact = () => {
   return (
     <Layout name="Contact">
       <form
-        className="p-4 m-2 flex justify-center flex-col"
+        className="p-4 m-2 flex justify-center items-center flex-col"
         ref={form}
         onSubmit={sendmail}
       >
@@ -94,11 +95,7 @@ const Contact = () => {
           </FormControl>
         </div>
 
-        <input
-          className="btnForm border-4 p-2 w-48 flex justify-center items-center"
-          value="SEND"
-          type="submit"
-        />
+        <CTAbtn title="Envoyer votre message" />
       </form>
     </Layout>
   );

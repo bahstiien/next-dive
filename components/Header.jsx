@@ -23,7 +23,7 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 const userNavigation = [
-  { name: "Dashboard", href: "/PrivateRoute/dashboardAdmin" },
+  { name: "Dashboard", href: "/admin/dashboardAdmin" },
   { name: "Paramètres", href: "#" },
   { name: "Deconnexion", href: "#" },
 ];
@@ -58,7 +58,7 @@ export default function Example(props) {
                     <h2 className="text-md pl-4 italic font-round text-blue-400">
                       <Link href="/">ScubApp</Link>
                     </h2>
-                    <DarkMode />
+                    {/* <DarkMode /> */}
                   </div>
                 </div>
                 <div className="mt-4">
@@ -79,7 +79,7 @@ export default function Example(props) {
                   aria-label="Global"
                 >
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className={classNames(
@@ -91,7 +91,7 @@ export default function Example(props) {
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
                 <div className="relative z-10 flex items-center lg:hidden">
@@ -113,11 +113,11 @@ export default function Example(props) {
                         <div>
                           <Menu.Button className="bg-white rounded-full flex focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             <span className="sr-only">Open user menu</span>
-                            <img
+                            {/* <img
                               className="h-8 w-8 rounded-full"
                               src={user.imageUrl}
                               alt="photo of the user"
-                            />
+                            /> */}
                           </Menu.Button>
                         </div>
                         <Transition
@@ -137,7 +137,7 @@ export default function Example(props) {
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href={item.href}
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -145,7 +145,7 @@ export default function Example(props) {
                                     )}
                                   >
                                     {item.name}
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                             ))}
@@ -165,7 +165,7 @@ export default function Example(props) {
             >
               <div className="pt-2 pb-3 px-2 space-y-1">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className={classNames(
@@ -177,17 +177,17 @@ export default function Example(props) {
                     aria-current={item.current ? "page" : undefined}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div className="border-t border-gray-200 pt-4 pb-3">
                 <div className="px-4 flex items-center">
                   <div className="flex-shrink-0">
-                    <img
+                    {/* <img
                       className="h-10 w-10 rounded-full"
                       src={user.imageUrl}
                       alt=""
-                    />
+                    /> */}
                   </div>
                   <div className="ml-3">
                     <div className="text-base font-medium text-gray-800">
@@ -200,13 +200,13 @@ export default function Example(props) {
                 </div>
                 <div className="mt-3 px-2 space-y-1">
                   {userNavigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="block rounded-md py-2 px-3 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -217,34 +217,3 @@ export default function Example(props) {
     </div>
   );
 }
-// const Header = (props) => {
-//   return (
-//     <div className="font-inter  text-gray-600  p-10 ">
-//       <Head>
-//         <title>{props.name}</title>
-//         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-//       </Head>
-//       <div className="flex">
-//         <ul className="flex flex-row font-round">
-//           <li className="pl-4 ">
-//             <Link href="/"> Accueil </Link>
-//           </li>
-//           <li className="pl-4 ">
-//             <Link href="/registration"> Inscription </Link>
-//           </li>
-//           <li className="pl-4 ">
-//             <Link href="/clubs"> Nos clubs partenaires </Link>
-//           </li>
-//           <li className="pl-4 ">
-//             <Link href="/contact"> Contact </Link>
-//           </li>
-//         </ul>
-//         <div className="flex-end ml-24">
-//           <AccountCircleIcon fontSize="large" />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;

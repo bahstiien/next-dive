@@ -1,9 +1,6 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Dive from "../public/images/diver.jpg";
-import Booking from "../public/images/booking.jpg";
 
 import EventNoteIcon from "@mui/icons-material/EventNote";
 
@@ -31,7 +28,7 @@ export default function App() {
               title="Search"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt sed eros eu vehicula."
             />
-            <Image src={Dive} alt="diver" />
+            {/* <Image src={Dive} alt="diver" /> */}
           </SwiperSlide>
           <SwiperSlide className={style.swiperslide}>
             <EventNoteIcon fontSize="large" className="mt-4" />
@@ -39,7 +36,7 @@ export default function App() {
               title="Booking"
               body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt sed eros eu vehicula."
             />
-            <Image src={Booking} alt="diver" className="rounded-xs m-2" />
+            {/* <Image src={Booking} alt="diver" className="rounded-xs m-2" /> */}
           </SwiperSlide>
         </Swiper>
       </div>
